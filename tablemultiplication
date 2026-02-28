@@ -1,0 +1,4 @@
+nombre = int(input("Entre un nombre : "))
+
+for i in range(0, 13):
+    print(nombre, "x", i, "=", nombre * i)
