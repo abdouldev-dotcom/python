@@ -1,6 +1,6 @@
 users={}
    
-def ajouter_user(user):
+def ajouter_user():
     nom=input("Entrer le nom : ")
     age=int(input("Entrer son age :"))
     users[nom]=age
@@ -73,7 +73,7 @@ while True:
     choix = input("Entrez votre choix : ")
 
     if choix == "1":
-                ajouter_user(users)
+                ajouter_user()
 
     elif choix == "2":
                 afficher_user()
@@ -86,9 +86,9 @@ while True:
 
     elif choix == "5":
                 print("Au revoir !")
-    break
+                break
 
-else:
-    print("Choix invalide, réessayez.")
+    else:
+        print("Choix invalide, réessayez.")
 
                  
